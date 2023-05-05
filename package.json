@@ -1,0 +1,19 @@
+{
+  "name": "jbtesttask",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Vladyslav Rybak <vladyslavry141@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "dev": "tsc -p ./tsconfig.json --watch",
+    "test": "npm run build && node --test ./dist"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3"
+  }
+}
